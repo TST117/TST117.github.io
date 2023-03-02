@@ -36,14 +36,13 @@ body {
     margin-top: 30px;
 }
 
-#nav_buttons button {
-    padding: 10px;
+#nav_buttons a {
     font-size: 1.5rem;
-    background-color: black;
     color: white;
+    text-decoration: none;
 }
 
-#nav_buttons button:hover {
+#nav_buttons a:hover {
     color: #6495ed;
 }
 
@@ -52,17 +51,40 @@ body {
         font-size: 3rem;
     }
 
-    #nav_buttons button {
+    #nav_buttons a {
         font-size: 1.25rem;
     }
 }
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
     h1 {
         font-size: 2rem;
     }
 
-    #nav_buttons button {
+    #nav_buttons a {
         font-size: 1rem;
+    }
+} */
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h1 span {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav_buttons {
+        display: block;
+    }
+
+    #nav_buttons a {
+        display: block;
+        font-size: 2rem;
+        min-width: 100%;
+        text-align: center;
     }
 }

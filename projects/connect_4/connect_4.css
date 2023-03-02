@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.game_container {
+    width: 800px;
+    height: 700px;
+    background-color: blue;
+    border: 3px solid black;
+}
+
+.col_dropper {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col_dropper button {
+    /* background-color: white;
+    border: 3px solid white; */
+    width: 25px;
+    height: 25px;
+}
+
+.board {
+    display: grid;
+    height: 650px;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.circle {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    align-self: center;
+    justify-self: center;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.red_circle {
+    background-color: red;
+}
+
+.red_btn {
+    background-color: red;
+    border: solid lightgray 3px;
+}
+
+.red_win {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 200px;
+    width: 400px;
+
+    color: red;
+    background-color: black;
+    border: 3px solid white;
+}
+
+.red_win p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+    margin: 0;
+}
+
+.red_win button {
+    display: block;
+    margin: auto;
+}
+
+.yellow_circle {
+    background-color: yellow;
+}
+
+.yellow_btn {
+    background-color: yellow;
+    border: solid lightgray 3px;
+}
+
+.yellow_win {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 200px;
+    width: 400px;
+
+    color: yellow;
+    background-color: black;
+    border: 3px solid white;
+}
+
+.yellow_win p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 0;
+    height: 50%;
+}
+
+.yellow_win button {
+    display: block;
+    margin: auto;
+}
+
+.disabled_btn {
+    background-color: blue;
+    border: blue;
+}

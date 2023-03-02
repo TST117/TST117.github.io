@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="score_keeper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <title>Score Keeper</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="card">
+          <div class="card-content">
+            <figure class="image is-2by1">
+              <img src="https://bulma.io/images/placeholders/128x128.png" />
+            </figure>
+            <br />
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">
+                  <span id="p1_score_text">0</span> to
+                  <span id="p2_score_text">0</span>
+                </p>
+                <label for="play_to" class="label is-large is-inline"
+                  >Playing To:
+                </label>
+                <div class="select is-rounded">
+                  <select name="" id="play_to">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <p class="subtitle is-6">Use the buttons below to keep score</p>
+                <button class="button is-success" id="p1_button">
+                  +1 Player One
+                </button>
+                <button class="button is-info" id="p2_button">
+                  +1 Player Two
+                </button>
+                <button class="button is-danger" id="reset">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="score_keeper.js"></script>
+  </body>
+</html>
